@@ -1,0 +1,200 @@
+###
+POST http://localhost:9000/api/doctor HTTP/1.1'
+Content-Type: application/json
+
+{
+    "nombre": "Cristian Ivan",
+    "apellidos" : "Armenta Vega",
+    "especialidad" : "Oncologo",
+    "edad" : 38,
+    "genero": "Masculino"
+}
+
+###
+GET http://localhost:9000/api/doctor HTTP/1.1'
+Content-Type: application/json
+
+###
+GET http://localhost:9000/api/doctor/ HTTP/1.1'
+Content-Type: application/json
+
+###
+PUT  http://localhost:9000/api/doctor/64c61ff5151a0c561a3bdac7 HTTP/1.1'
+Content-Type: application/json
+
+{
+    "nombre": "sandra",
+    "apellidos" : "rivera",
+    "especialidad" : "medica general",
+    "edad" : 25,
+    "genero": "femenino"
+}
+
+###
+DELETE  http://localhost:9000/api/doctor/64c61ff5151a0c561a3bdac7 HTTP/1.1'
+
+# API HOSPITAL
+###
+POST http://localhost:9000/api/hospital HTTP/1.1'
+Content-Type: application/json
+
+{
+    "nombre": "Clinica 27",
+    "direccion":  "Blvd. Gustavo Díaz Ordaz s/n, Huertas 5ta Secc, 22127 Tijuana, B.C.",
+    "numero_contacto": "6646296380",
+    "cantidad_cuneros": 18
+}
+
+###
+GET http://localhost:9000/api/hospital HTTP/1.1'
+Content-Type: application/json
+
+###
+GET http://localhost:9000/api/hospital/64c61a52b339b6d12eb930d1 HTTP/1.1'
+Content-Type: application/json
+
+###
+PUT  http://localhost:9000/api/hospital/64c61a52b339b6d12eb930d1 HTTP/1.1'
+Content-Type: application/json
+
+{
+    "nombre": "Hospital General Regional 20",
+    "direccion":  "Blvd. Gustavo Díaz Ordaz s/n, Las Fuentes, 22115 Tijuana, B.C",
+    "numero_contacto": "6646296350",
+    "cantidad_cuneros": 15
+}
+
+###
+DELETE  http://localhost:9000/api/hospital/64c61c9e2ab424a626e07904 HTTP/1.1'
+
+# API ENFERMERA
+
+###
+POST http://localhost:9000/api/enfermeras HTTP/1.1'
+Content-Type: application/json
+
+{
+    "nombre": "Cindy",
+    "apellidos":  "Respardo Muro",
+    "edad": 25,
+    "genero": "Femenino"
+}
+
+###
+GET http://localhost:9000/api/enfermeras HTTP/1.1'
+Content-Type: application/json
+
+###
+GET http://localhost:9000/api/enfermeras/64c6274d53d2b67873c34e1f HTTP/1.1'
+Content-Type: application/json
+
+###
+PUT http://localhost:9000/api/enfermeras/64c6278a53d2b67873c34e23 HTTP/1.1'
+Content-Type: application/json
+
+{
+    "nombre": "Cindy",
+    "apellidos":  "Respardo Muro",
+    "edad": 26,
+    "genero": "Femenino"
+}
+
+###
+DELETE  http://localhost:9000/api/enfermeras/64c6278a53d2b67873c34e23 HTTP/1.1'
+
+# API BEBES
+
+###
+POST http://localhost:9000/api/bebes HTTP/1.1'
+Content-Type: application/json
+
+{
+    "nombre": "Ian ",
+    "apellidos":  "Zamora Sandovalz",
+    "genero": "Masculino"
+}
+
+###
+GET http://localhost:9000/api/bebes HTTP/1.1'
+Content-Type: application/json
+
+###
+GET http://localhost:9000/api/bebes/64c62b7906fd2165ad3263b3 HTTP/1.1'
+Content-Type: application/json
+
+###
+PUT http://localhost:9000/api/bebes/64c62b7906fd2165ad3263b3 HTTP/1.1'
+Content-Type: application/json
+
+{
+    "nombre": "Ian David",
+    "apellidos":  "Zamora Sandovalz",
+    "genero": "Masculino"
+}
+
+###
+DELETE  http://localhost:9000/api/bebes/64c62b7906fd2165ad3263b3 HTTP/1.1'
+
+# API PADRES
+###
+POST http://localhost:9000/api/padres HTTP/1.1'
+Content-Type: application/json
+
+{
+    "nombre": "Denisse ",
+    "apellidos":  "De la torre",
+    "edad": 35,
+    "correo": "denisse@gmail.com",
+    "telefono": "6642302123"
+}
+
+###
+GET http://localhost:9000/api/padres HTTP/1.1'
+Content-Type: application/json
+
+###
+PUT http://localhost:9000/api/padres/64c7e7cefba7db2a30f8235c HTTP/1.1'
+Content-Type: application/json
+
+{
+    "nombre": "Denisse ",
+    "apellidos":  "De la torre",
+    "edad": 38,
+    "correo": "denisse@gmail.com",
+    "telefono": "6642302123"
+}
+
+# API CUNERO
+###
+GET http://localhost:9000/api/cuneros HTTP/1.1'
+Content-Type: application/json
+
+#
+###
+POST http://localhost:9000/api/user/registros HTTP/1.1'
+Content-Type: application/json
+
+{
+    "nombre": "prueba ",
+    "email": "prueba4@gmail.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:9000/api/user/login HTTP/1.1'
+Content-Type: application/json
+
+{
+    "nombre": "prueba ",
+    "email": "prueba4@gmail.com",
+    "password": "123456"
+}
+
+
+###
+GET http://localhost:9000/api/sensor HTTP/1.1'
+Content-Type: application/json
+
+###
+GET http://localhost:9000/api/images/latest HTTP/1.1'
+Content-Type: application/json
